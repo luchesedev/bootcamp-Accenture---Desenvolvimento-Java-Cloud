@@ -10,10 +10,8 @@ public class Main {
     public static void main(String[] args) {
 
 
-        int b = 10;
-        b++;
-        ++b;
-        System.out.println(" " + b );
+
+
         do {
             mostrarmenu();
         }while (condition );
@@ -183,9 +181,6 @@ public class Main {
             number1 = sc.nextInt();
         }
         System.out.printf("%s %% %s = %s \n",number1 , number2, number1% number2);
-
-
-
     }
     public static void mostrarmenu( ){
         Scanner sc = new Scanner(System.in);
@@ -226,10 +221,7 @@ public class Main {
                 System.out.println("numero invalido , tente novamente");
                 break;
             }
-
         }
-
-
     }
 
 
