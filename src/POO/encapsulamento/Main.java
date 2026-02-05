@@ -1,4 +1,5 @@
-package POO;
+package POO.encapsulamento;
+
 import java.util.Scanner;
 
 public class Main {

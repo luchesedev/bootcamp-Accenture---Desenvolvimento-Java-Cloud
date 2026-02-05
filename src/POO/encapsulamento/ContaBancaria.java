@@ -1,4 +1,4 @@
-package POO;
+package POO.encapsulamento;
 
 public class ContaBancaria {
     private String nome;
