@@ -1,6 +1,6 @@
-package POO.polimorfismoAndHeranca;
+package POO.polimorfismoAndHeranca.aulas;
 
-public class Manager extends Employee {
+public non-sealed class Manager extends Employee {
     private String login;
 
     private String password;
@@ -10,7 +10,10 @@ public class Manager extends Employee {
     public String getLogin() {
         return login;
     }
-
+    @Override
+    public String getCode(){
+        return "MG" + super.getCode();
+    }
     public void setLogin(String login) {
         this.login = login;
     }

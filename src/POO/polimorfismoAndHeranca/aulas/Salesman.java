@@ -1,6 +1,6 @@
-package POO.polimorfismoAndHeranca;
+package POO.polimorfismoAndHeranca.aulas;
 
-public class Salesman extends Employee {
+public non-sealed class Salesman extends Employee {
     private double PercentPerSold;
 
     public double getPercentPerSold() {
@@ -9,5 +9,9 @@ public class Salesman extends Employee {
 
     public void setPercentPerSold(double percentPerSold) {
         PercentPerSold = percentPerSold;
+    }
+    @Override
+    public String getCode(){
+        return "SL" + super.getCode();
     }
 }

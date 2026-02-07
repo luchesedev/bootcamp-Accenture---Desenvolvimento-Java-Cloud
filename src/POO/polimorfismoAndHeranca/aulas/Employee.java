@@ -1,6 +1,6 @@
-package POO.polimorfismoAndHeranca;
+package POO.polimorfismoAndHeranca.aulas;
 
-public class Employee {
+public sealed abstract class Employee permits Manager, Salesman {
     private String name;
 
     private String code;
@@ -8,6 +8,9 @@ public class Employee {
     private String adress;
 
     private int Age;
+
+    // sealed deixa a classe protegida pra que apenas as outras classes permitidas consigam herdar suas caracteristicas
+    // abstract impedia instanciar uma claasse generia(employee ) com new para dps com um "super" as classes filhas pegarem seus dados e instaciarem elas entao com sua respectiva classe
 
     public int getAge() {
         return Age;
